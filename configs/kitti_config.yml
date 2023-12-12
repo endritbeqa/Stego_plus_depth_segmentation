@@ -1,0 +1,16 @@
+output_path: "results/predictions_kitti"
+dataset_path: "data/KITTI-360"
+res: 320
+cropper: "center"
+batch_size: 1
+
+
+model_path: "checkpoints/saved_models/cityscapes_vit_base_1.ckpt"
+
+
+hydra:
+  run:
+    dir: "."
+  output_subdir: ~
+  #job_logging: "disabled"
+  #hydra_logging: "disabled"
